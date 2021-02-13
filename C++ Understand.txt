@@ -1,0 +1,227 @@
+                                                     C++ Language :
+
+    It is developed by Bjarne Stroustoup as a enhancement in the c languagse.Izt is basically extensionx of c language with new features,
+    and object oriented programming which c language lacks. It is currently the most used and most popular language out there.
+    Lets get started in it :
+
+
+                                                    Basic Syntax :
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+
+    getch();
+    return 0;
+
+}
+
+Its the basic skelton of c++ language.
+program execution/compilation always start from main function.
+Iostream and conio.h are basically header files or prewritten source code to perform some task that come preloaded with compiler we have
+to just use them.
+iostream Stands for input/output stream it gives method or way to display our data on screen or take some input from the user and have many other things
+functions for different works to support.
+C++ also have a vast library support just like python.
+int is return type here. hence we write int so the main function will have to return some integer so given return 0 in coding inside function.
+
+                                                For taking input/output :
+
+
+cin and cout are basically used .
+
+suppose :
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a,b;
+    cout<<"Enter the first number :";
+    cin>>a;
+    cout<<"Enter the second number : ";
+    cin>>b;
+    cout<<"The sum of "<<a<<" and "<<b<<" is "<<a+b;
+    return 0;
+}
+
+## << is called as insertion operator.
+## >> is called as extraction operator.
+
+# variable are just container to hold values of different data types these data types may be:
+    int , float , char , double , bool etc.
+
+#                                           Comments :
+
+for single line  --- //
+for multi line --
+
+                /*   -------------------------
+                         -----body---------------             */
+
+#
+
+::   -           Called as scope resolution operator.
+
+
+#                                          Variables and Data types:
+
+These can be classified as two types :
+
+1) Local variables - variables declared inside some function are called local variables. it only can be used or work inside the function in which it is declared.these can be accessed only from inside the function.
+
+
+2) Global variables - variables declared outside, not inside some function are called global variables these are can be used in whole source code anywhere we want to.These can be accessed from anywhere.
+
+
+            Local variables get higher priority then global variables if there is some messs created.
+
+            Yes Local variables and global variables can have same name.
+
+
+# char data type is used for single character only enclosed with single quotes.
+# for string "" double quotes are used.
+
+
+                                Data types can be classified as:
+
+## Built-in data types
+
+                   # Like int , float , double , char etc.
+                   # float data type is used to store upto 7 decimal digits after decimal point
+                   #  Double data type is used to store upto 14 decimal digits after decimal point so it gives more precision.
+                   # Bool is data type that takes only two values true or false.
+
+## User-defined data types
+
+                    # Structure
+                    # Union
+                    # Enum
+
+## Derived data types
+
+                    # Array
+                    # Pointer
+                    # Function
+
+##   int car = 54, motor = 55;  // we can do declaration like this also.
+
+## endl is used to end the line and begin from next line '\n' will also do the same as its a escape sequence.
+
+##                                   Rules to declare Variables :
+
+                Screenshot given with name 1.jpg in the folder.
+
+
+## iostream is system header file that come pre-written with compiler to ennhance the programming.
+## we can make our own header file and use it this header file may have different function written that we can use.
+
+
+//                                   Header files:
+
+There are two types of header files: 
+
+1 System header file - comes pre-written with compiler
+2 User header file - user/programmer write it for his/her use.
+
+
+//                                  Operators in c++ :
+
+1. Arithmetic operators - +,-,*,/,%
+
+    when use divide like 8/5 and both are int type then result will also be int type so answer will be 1 (int type) instead of 1.6 to gain full value we atleast have to define one value as float.
+
+2.Increment and Decrement Operators :
+ 
+     If sign used before it is pre increment and if after variable it is post increment like this -----
+          a++  - post increment     and     ++a   - pre increment
+             same is with the decrement operator. 
+
+if we print a++ then first a got printed then its value will be increased by 1.
+
+3.Assignment Operators :
+
+  '=' is assignment operator used to assign a value to the variable.
+
+4.Comparison Operators :
+
+'==' is used to compare. others are <,>,<=,>=,!= etc.
+
+5.Logical operators :
+
+&& - logical AND operator
+|| - logical OR operator
+! -  logical NOT operator
+
+
+
+//   iF we want to use or access global variable inside any function which already have a local variable with the same name as global variable then local variable will predominantly be used but if we want to use global variable then we have to use scope resolution operator (::) before variable then it will show global variable.
+
+example -               #include <iostream>
+                        #include <conio.h>
+
+                        using namespace std;
+                        int acer = 90;
+                        int main()
+                        {
+                            int acer = 8, b = 9;
+                            cout<<::acer;
+                            return 0 ;
+                        }
+
+// By default c++ compiler takes all decimal values as double.if we want to use it as float we can put'f' or 'F'
+for float and 'L' or 'l' for long double.
+
+//                                       Referenced varibale :
+
+suppose your name is ram and your parents call you romi and neighbours call you duggu then these all names 
+refer to you only you are a single person . so likewise in c++ we can make reference vaiable that refer to any other variable and variable is only 1 but also have name ram as well as duggu as well as romi we can access the varibale through any name. 
+
+ex- ---
+
+we can make reference variable to any variable by using & before it and assigning it the name of other variable
+whom we want to make reference.
+
+                            int car = 89;
+                            int &lamaoborghini = car; //making reference variable
+                            cout<<lamaoborghini<<endl;
+                            return 0 ;
+
+
+//                                  Typecasting :
+
+converting one data type to other like int to float float to int etc.
+
+example of type casting:
+
+                        float car = 89.98;
+                        cout<<int(car)<<endl;
+                        cout<<float(int(car))<<endl;     ..type casting
+                        return 0 ;
+
+//                          Constants:
+
+we can make constant in c++ whose value can not be changed once defined using 'const' keyword before data type
+in variable.
+
+ex- ---
+
+const int a = 54 ; so now it is constant and cant be change now.
+
+
+//                          Manipualtor:
+
+endl is a manipulator. i.e used to manipulate visible data on screen i.e to make it look good.
+
+//                         Operators precedence and associativity:
+
+you can see chart at cppreference.com
+
+
+//                         
+
