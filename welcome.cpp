@@ -8,7 +8,7 @@
 
 using namespace std;
 int main()
-{
+{ // fuck
     cout<<"Hell o World!!";
     return 0;
 } 
